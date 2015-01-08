@@ -12,6 +12,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt-ruby'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'
+gem 'bootstrap_form'
+gem 'autoprefixer-rails'
+gem 'annotate', '~> 2.6.5'
+
 
 group :development, :test do
   gem 'rspec-rails', '2.99'

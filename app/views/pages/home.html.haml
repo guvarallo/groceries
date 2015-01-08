@@ -1,0 +1,58 @@
+/ Header
+.intro-header
+  .container
+    .row
+      .col-lg-12
+        .intro-message
+          %h1 Groceries
+          %h3 Now THAT'S a grocery shopping list!
+/ Page Content
+.content-section-a
+  .container
+    .row
+      .col-lg-5.col-sm-6
+        %hr.section-heading-spacer/
+        .clearfix
+        %h2.section-heading
+          Create a new list
+        %p.lead
+          It's incredibly easy!
+      .col-lg-5.col-lg-offset-2.col-sm-6
+        %img.img-responsive{:alt => "", :src => "assets/add-list.png"}/
+.content-section-b
+  .container
+    .row
+      .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+        %hr.section-heading-spacer/
+        .clearfix
+        %h2.section-heading
+          Add tasks
+        %p.lead
+          You can add tasks or just items you need to buy.
+      .col-lg-5.col-sm-pull-6.col-sm-6
+        %img.img-responsive{:alt => "", :src => "assets/add-tasks.png"}/
+.content-section-a
+  .container
+    .row
+      .col-lg-5.col-sm-6
+        %hr.section-heading-spacer/
+        .clearfix
+        %h2.section-heading
+          Go to the store
+        %p.lead
+          Move your ass now and go!
+      .col-lg-5.col-lg-offset-2.col-sm-6
+        %img.img-responsive{:alt => "", :src => "assets/shop.png"}/
+.banner
+  .container
+    .row
+      .col-lg-6
+        %h2 Sign up now!
+        %br>/
+        %h2 No spams, we promise :)
+      .col-lg-6
+        %ul.list-inline.banner-social-buttons
+          %li
+            = link_to new_user_path, class: "btn btn-default btn-lg" do
+              %i.fa.fa-sign-in.fa-fw
+              %span.network-name Sign up with email
