@@ -7,16 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
+  <div id="wrapper">
+    <div id="header">
     <%= render 'shared/navigation' %>
-  </header>
-
-  <section id="msg">
-    <%= render 'shared/messages' %>
-  </section>
-
-<%= yield %>
-
+    </div>
+    <section id="msg">
+      <%= render 'shared/messages' %>
+    </section>
+    <div id="content">
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <%= render 'shared/footer' %>
+    </div>
+  </div>
 </body>
-<%= render 'shared/footer' %>
 </html>
