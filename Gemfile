@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.1"
 
 gem 'rails', '4.2.0'
 gem 'pg'
@@ -20,6 +20,7 @@ gem 'autoprefixer-rails'
 gem 'annotate', '~> 2.6.5'
 gem 'responders', '~> 2.0'
 
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'rspec-rails', '2.99'

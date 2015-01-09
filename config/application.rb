@@ -22,5 +22,8 @@ module Groceries
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    #Needed to serve assets on Heroku
+    config.serve_static_assets = true
   end
 end
