@@ -18,6 +18,10 @@ h6 {
     font-weight: 700;
 }
 
+#msg {
+  padding-top: 50px;
+}
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -164,15 +168,32 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
 p.copyright {
     margin: 15px 0 0;
 }
 
-.sign {
+.sign_up {
   padding-top: 80px !important;
   padding-bottom: 15%;
+}
+
+.sign_in {
+  padding-top: 70px !important;
+  padding-bottom: 25%;
+}
+
+.task {
+  margin-top: 20px;
+}
+
+#incomplete_tasks {
+  margin-top: 30px;
+}
+
+.foots {
+  padding-bottom: 27%;
 }

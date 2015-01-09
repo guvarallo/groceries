@@ -1,0 +1,12 @@
+.container
+  .row.task
+    .col-sm-10.col-sm-offset-1
+      %h2 #{current_user.name}'s Tasks
+      %br
+      = link_to new_task_path, id: 'new_link', remote: true do
+        %i.fa.fa-plus
+        %span.network-name New Task
+      %br
+      %div#incomplete_tasks.list-group
+        = render @incomplete_tasks
+.foots

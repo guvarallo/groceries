@@ -10,12 +10,8 @@
 #  updated_at      :datetime
 #
 
-class User < ActiveRecord::Base
-
-  has_many :tasks
-
-  validates_presence_of :name, :email, :password
-  validates_uniqueness_of :email
-
-  has_secure_password
+Fabricator(:user) do
+  name { Faker::Name.name }
+  email { Faker::Internet.email }
+  password { 'password' }
 end

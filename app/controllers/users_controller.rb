@@ -6,9 +6,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
-      flash[:notice] = "User successfully created"
 
+    if @user.save
+      flash[:success] = "Alright, sign up was successfully done, welcome 
+                        #{@user.name}!"
+      session[:user_id] = @user.id
+      redirect_to tasks_path
     else
       render :new
     end
