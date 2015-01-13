@@ -1,5 +1,8 @@
 # Groceries
 
-### If you ever need a cool groceries shopping list, use this one.
+### A cool groceries shopping list.
 
 Developed by [Gustavo Varallo](http://www.varallo.me)
+
+### License
+MIT licensed code, go ahead and use it.
